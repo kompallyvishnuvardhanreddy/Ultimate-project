@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "suneel-project-v12"
+  bucket = "suneel-new-project-cloud-v1"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -25,7 +25,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "us-east-1"
-bucket = "suneel-project-v12"
+bucket = "suneel-new-project-cloud-v1"
 key = "prod/terraform.tfstate"
 }
 }
