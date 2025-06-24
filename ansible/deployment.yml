@@ -26,7 +26,7 @@
 
     - name: get the source code from github
       git:
-        repo: "https://github.com/suneelprojects/static-docker.git"
+        repo: "https://github.com/suneelprojects/docker-site.git"
         dest: /var/www/
         update: yes
         version: master
