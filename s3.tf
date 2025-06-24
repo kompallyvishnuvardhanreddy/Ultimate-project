@@ -22,3 +22,10 @@ versioning_configuration {
 status = "Enabled"
 }
 }
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "suneel.devops.project.cloud.v1"
+key = "prod/terraform.tfstate"
+}
+}
