@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "one" {
-  bucket = "suneel-new-project-cloud-v1"
+ resource "aws_s3_bucket" "one" {
+  bucket = "suneel.devops.project.cloud.v1"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
