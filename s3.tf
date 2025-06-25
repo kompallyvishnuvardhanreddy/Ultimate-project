@@ -23,3 +23,10 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "vishnu.monolithic.project.cloud.v9"
+key = "prod/terraform.tfstate"
+}
+}
