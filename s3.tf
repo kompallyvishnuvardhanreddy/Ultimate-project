@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "vishnu.monolithic.project.cloud.v9"
+  bucket = "vishnu.monolithic.project.cloud.v8"
 
   lifecycle {
     prevent_destroy = true
@@ -30,7 +30,7 @@ resource "aws_s3_bucket_versioning" "four" {
 terraform {
   backend "s3" {
     region = "us-east-1"
-    bucket = "vishnu.monolithic.project.cloud.v9"
+    bucket = "vishnu.monolithic.project.cloud.v8"
     key    = "prod/terraform.tfstate"
   }
 }
